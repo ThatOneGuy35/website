@@ -17,7 +17,7 @@
         <div>
             <h3>Add Vehicles</h3>
         </div>
-        <form class="adv" action="contactform.php" method="POST">
+        <form class="adv" action="includes/addveh.php" method="POST">
             <ul>
                 <li><input type="text" name="year" placeholder="Year"></li>
                 <li><input type="text" name="make" placeholder="Make"></li>

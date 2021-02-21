@@ -4,5 +4,6 @@
                     <li><a href="avehicle.php">Add Vehicle</a></li>
                     <li><a href="vdatabase.php">Database</a></li>
                     <li><a href="statistic.php">Statistics</a></li>
+                    <li><a href="admin.php">Admin Panel</a></li>
                 </ul>
 </nav>
