@@ -19,15 +19,20 @@
         <?php 
             $sql = "SELECT * FROM vehicles;";
             $result = mysqli_query($conn, $sql);
-            $resultCheck = mysqli_num_rows($result);
-
-            if ($resultCheck > 0){
-                while ($row = mysqli_fetch_assoc($result)) {
-                    foreach ($row as $columnName => $columnData) {
-                        echo ' ' . $columnName . ' ' . $columnData . '<br />';
-                    }
+            $vi = array();
+            if (mysqli_num_rows($result) > 0) {
+                while($row = mysqli_fetch_assoc($result)) {
+                    $vi[] = $row;
                 }
             }
+            //print_r($vi);
+
+            foreach ($vi as $v) {   
+                echo $v['year']." ";
+                echo $v['make']." ";
+                echo $v['model']." ";          
+            }
+
         ?>
     </body>
 </html>
