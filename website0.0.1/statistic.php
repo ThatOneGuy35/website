@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Statistics</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="includes/style.css">
         <meta name="viewport" content="width=device-width, intiial-scale=1.0">
     </head>
     <body>

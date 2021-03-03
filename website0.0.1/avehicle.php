@@ -9,7 +9,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Add Vehicle</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="includes/style.css">
         <meta name="viewport" content="width=device-width, intiial-scale=1.0">
     </head>
     <body>
@@ -28,8 +28,8 @@
                 <li><input type="text" name="vin" placeholder="Vin"></li>
                 <li>Lot: 
                     <select name="Lot">
-                        <option value="hunt">Huntington</option>
-                        <option value="wayne">Wayne</option>
+                        <option value="Huntington">Huntington</option>
+                        <option value="Wayne">Wayne</option>
                     </select>
                 </li>
                 <li><input type="text" name="location" placeholder="Location"></li>
@@ -48,8 +48,8 @@
                 <li>
                     Type: 
                     <select name="type">
-                        <option value="imp">Impound</option>
-                        <option value="wreck">Wreck</option>
+                        <option value="Impound">Impound</option>
+                        <option value="Wreck">Wreck</option>
                     </select>
                     Other: <input type="text" name="other" placeholder="...">
                 </li>
