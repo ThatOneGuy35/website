@@ -7,15 +7,23 @@
 
 <!-- Example Comment tag cause I'm gonna forget -->
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Vehicle Details</title>
-        <link rel="stylesheet" href="includes/style.css">
-        <meta name="viewport" content="width=device-width, intiial-scale=1.0">
-    </head>
-    <body>
-        <div class="vehicle-container">
-            <?php 
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle Details</title>
+    <link rel="stylesheet" href="includes/style.css">
+    <meta name="viewport" content="width=device-width, intiial-scale=1.0">
+</head>
+
+<body>
+    <!--     <form class="editv" action="includes/editvehicle.php" method="POST">
+            <button type="button" name="editVehicle">Edit Vehicle</button>
+    </form>
+    <form class="releasev" action="includes/rvehicle.php" method="POST">
+        <button type="button" name="releaseVehicle">Release Vehicle</button>
+    </form> -->
+    <div class="vehicle-container">
+        <?php 
                 $vehicle = mysqli_real_escape_string($conn, $_GET['vehicle']);
                 $vin = mysqli_real_escape_string($conn, $_GET['vin']);
 
@@ -59,9 +67,12 @@
                     echo "Type: ".$v['type']." </br>";  
                     echo "Keys: ".$keys." </br>";
                     echo "Date in: ".$v['datein']." </br>";
-                    echo $v['notes']." </a></br>";
+                    echo $v['notes']."</br>";
+                    echo "<a href = 'includes/evehicle.php?vehicle=".$v['veh_id']."&vin=".$v['vin']."'>Edit Vehicle</a>";
                 }
             ?>
-        </div>
-    </body>
+    </div>
+
+</body>
+
 </html>

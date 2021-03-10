@@ -259,3 +259,7 @@ body {
 .vehicle-container a:hover {
     color: #383532;
 }
+
+#edit.editv {
+    display: inline-block !important;
+}

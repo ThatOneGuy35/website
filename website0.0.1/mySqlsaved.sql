@@ -13,4 +13,5 @@ $resultCheck = mysqli_num_rows($result);
                 }
             }
 
+LIKE '%$search%' OR make LIKE '%$search%' OR model LIKE '%$search%' OR color LIKE '%$search%' OR plate LIKE '%$search%' OR state LIKE '%$search%' OR vin LIKE '%$search%' OR loc LIKE '%$search%' OR datein LIKE '%$search%'";
 
